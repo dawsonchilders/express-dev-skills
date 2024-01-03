@@ -10,7 +10,7 @@
     <ul>
         <% skills.forEach(function(skl) { %>
           <li>
-            <%= skl.skill %>
+            <a href="/skills/<%= skl.id %>"><%= skl.skill %></a>
             
           </li>
         <% }); %>
