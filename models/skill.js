@@ -1,19 +1,14 @@
 const skills = [
-  {id: 1234, skills: 'HTML'},
-  {id: 1235, skills: 'CSS'},
-  {id: 1236, skills: 'JavaScript'}  
+  {id: 1234, skill: 'HTML'},
+  {id: 1235, skill: 'CSS'},
+  {id: 1236, skill: 'JavaScript'}  
 ];
 
 module.exports = {
-    getAll,
-    getOne
+    getAll
   };
 
-  function getOne(id) {
-    id = parseInt(id);
-    return skills.find((skills) => skills.id === id);
- 
-  }
+  
 	
   function getAll() {
     return skills;
