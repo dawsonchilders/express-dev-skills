@@ -6,9 +6,6 @@ module.exports = {
     show
 };
 
-
-// controllers/todos.js
-
 function show(req, res) {
     const skill = Skill.getOne(req.params.id);
     res.render('skills/show', { skill });
